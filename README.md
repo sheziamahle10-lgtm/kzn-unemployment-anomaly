@@ -25,6 +25,28 @@ Which industries, education levels, and age groups contributed to KZN's unique e
 2. **Service-sector concentration** — Community & social services (625K) and wholesale/retail trade (553K) are KZN's top industries.
 3. **Youth crisis hidden by aggregate** — the province's overall rate is low because its large 35-54 population is stably employed, but youth unemployment remains severe.
 
+## 📊 Charts
+
+### Unemployment Rate by Province (Q1 2026)
+KwaZulu-Natal highlighted in red — the only province below the national average trend.
+
+![Unemployment by Province](outputs/figures/01_unemployment_by_province.png)
+
+### KZN vs National Unemployment Trend
+While the national rate rose, KZN's rate fell — the anomaly this project investigates.
+
+![KZN vs National Trend](outputs/figures/02_kzn_vs_national.png)
+
+### KZN Employment by Industry
+The province's employment base is concentrated in community services, retail, and financial services.
+
+![KZN Employment by Industry](outputs/figures/03_kzn_industry.png)
+
+### KZN Unemployment by Age Group
+The aggregate number hides a youth crisis: 64.6% of 15-24 year olds are unemployed.
+
+![KZN Unemployment by Age Group](outputs/figures/04_kzn_age_groups.png)
+
 ## Data Source
 
 Quarterly Labour Force Survey (QLFS) Q1 2026, Statistics South Africa, distributed via [DataFirst (UCT)](https://www.datafirst.uct.ac.za/).
@@ -42,11 +64,13 @@ Quarterly Labour Force Survey (QLFS) Q1 2026, Statistics South Africa, distribut
 kzn-unemployment-anomaly/
 ├── data/
 │ ├── raw/ # Original QLFS dataset (not committed to Git)
+│ ├── external/ # Supplementary data
 │ └── processed/ # Cleaned data
 ├── notebooks/
 │ └── 01_data_loading.ipynb
 ├── src/ # Reusable Python functions
-├── outputs/ # Saved charts and tables
+├── outputs/
+│ └── figures/ # Analysis charts
 └── reports/ # Written analysis
 
 
